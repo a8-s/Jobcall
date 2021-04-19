@@ -9,7 +9,7 @@ import 'swiper/swiper.scss';
 import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
-import useWindowDimensions from './util/windowDimens';
+import useWindowDimensions from '../util/windowDimens';
 
 // install Swiper modules
 SwiperCore.use([Navigation, Pagination, A11y]);
@@ -18,7 +18,7 @@ interface Props {
     
 }
 
-const Testimonial = (props: Props) => {        
+export const Testimonial = (props: Props) => {        
         const {width,} = useWindowDimensions()
         const val = width<760?1:3
     return (
@@ -29,6 +29,9 @@ const Testimonial = (props: Props) => {
     <div className="swiper-wraper">
 
         <Swiper
+            autoplay = {{
+                delay: 5000
+            }}
           spaceBetween={50}
           slidesPerView={val}
           pagination={{ clickable: true }}
@@ -90,4 +93,3 @@ const Testimonial = (props: Props) => {
       );
 }
 
-export default Testimonial

@@ -1,12 +1,31 @@
 import React from 'react'
 import { Nav, Navbar} from 'react-bootstrap'
+import { useLocation } from 'react-router'
+
+
+
+const PageLink =()=>{
+  let location = useLocation().pathname
+  if(location==='/applicant'){
+   return <>
+    <Nav.Link href="#resume">Resume</Nav.Link>
+    <Nav.Link href="#testimonial">Testimonial</Nav.Link>
+    </>
+  }
+  else{
+    return <>
+    <Nav.Link href="#service">Services</Nav.Link>
+    <Nav.Link href="#applicant">Applicant</Nav.Link>
+    </>
+  }
+}
 
 interface Props {
     
 }
 
-const Header = (props: Props) => {
-
+export const Header = (props: Props) => {
+    
     return (
 
       <Navbar bg="light" expand="lg">
@@ -16,8 +35,7 @@ const Header = (props: Props) => {
           <Nav className="ml-auto">
             <Nav.Link href="#hero">Home</Nav.Link>
             <Nav.Link href="#about">About</Nav.Link>
-            <Nav.Link href="#resume">Resume</Nav.Link>
-            <Nav.Link href="#testimonial">Testimonial</Nav.Link>
+            <PageLink/>
             <Nav.Link href="#contact">Contact</Nav.Link>
           </Nav>
           
@@ -25,5 +43,3 @@ const Header = (props: Props) => {
       </Navbar>
     )
 }
-
-export default Header

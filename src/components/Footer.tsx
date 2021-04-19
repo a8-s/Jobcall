@@ -4,7 +4,7 @@ interface Props {
     
 }
 
-const Footer = (props: Props) => {
+export const Footer = (props: Props) => {
     return (
         <>
             <footer id="footer">
@@ -22,4 +22,3 @@ const Footer = (props: Props) => {
         </>
     )
 }
-export default Footer

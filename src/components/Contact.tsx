@@ -4,7 +4,7 @@ interface Props {
     
 }
 
-const Contact = (props: Props) => {
+export const Contact = (props: Props) => {
     return (
     <section id="contact" className="contact section-bg">
       <div className="container">
@@ -79,4 +79,3 @@ const Contact = (props: Props) => {
     )
 }
 
-export default Contact

@@ -4,7 +4,7 @@ interface Props {
     
 }
 
-const About = (props: Props) => {
+export const About = (props: Props) => {
     return (
     <section id="about" className="about">
       <div className="container">
@@ -30,4 +30,3 @@ const About = (props: Props) => {
     )
 }
 
-export default About

@@ -1,11 +1,6 @@
-import React from 'react'
-import About from './components/About'
-import Contact from './components/Contact'
-import Footer  from './components/Footer'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import Resume from './components/Resume'
-import Testimonial from './components/Testimonial'
+
+import {Header,Footer}  from './components'
+import Routes from './routes';
 
 interface Props {
   
@@ -15,11 +10,7 @@ const App = (props: Props) => {
   return (
     <>
     <Header/>
-    <Hero/>
-    <About/>
-    <Resume/>
-    <Testimonial/>
-    <Contact/>
+        <Routes />
     <Footer/>
     </>
   )

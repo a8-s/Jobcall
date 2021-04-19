@@ -4,7 +4,7 @@ interface Props {
     
 }
 
-const Resume = (props: Props) => {
+export const Resume = (props: Props) => {
     return (
     <section id="resume" className="resume section-bg">
       <div className="container">
@@ -78,5 +78,3 @@ const Resume = (props: Props) => {
     </section>
     )
 }
-
-export default Resume
