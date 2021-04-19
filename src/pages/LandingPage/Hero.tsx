@@ -17,7 +17,7 @@ export const LandingHero = (props: Props) => {
           <h2>We are talented team of professionals promoting a productive employment and decent work for all</h2>
           <div className="d-flex justify-content-center justify-content-lg-start align-items-center" >
 		  <Form.Control size="lg" type="text" placeholder="Find Employee" />
-            <a href="/applicant" className="btn-get-started scrollto">Go</a>
+            <a href="/result" className="btn-get-started scrollto">Go</a>
             </div>
         </div>
         <div className="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
